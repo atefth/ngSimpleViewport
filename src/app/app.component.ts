@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+	direction: string;
+	placement: string;
+
+  constructor() { 
+    this.direction = 'left';
+    this.placement = 'bottomLeft';
+  }
+
+  ngOnInit() { }
 }
